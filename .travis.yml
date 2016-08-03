@@ -1,10 +1,13 @@
 language: php
+addons:
+    code_climate:
+        repo_token: d0e23038b194e5c18ee7977ce00704fd6b521bbf5d28cd272d83a6736930fb56
 install: composer install
 script: phpunit --bootstrap vendor/autoload.php tests/VehicleClientTest.php
+after_script:
+  - vendor/bin/test-reporter
 after_success: phpunit --coverage-clover build/logs/clover.xml
 php:
   - '7.0'
   - nightly
-addons:
-    code_climate:
-        repo_token: d0e23038b194e5c18ee7977ce00704fd6b521bbf5d28cd272d83a6736930fb56
+
