@@ -10,4 +10,3 @@ after_success: phpunit --coverage-clover build/logs/clover.xml
 php:
   - '7.0'
   - nightly
-
