@@ -7,4 +7,4 @@ php:
   - nightly
 addons:
     code_climate:
-        repo_token: fc6c9e3297a414ac544133b02c8ee15958a1f95bbe93df275cd09bc3125e4f5c
+        repo_token: d0e23038b194e5c18ee7977ce00704fd6b521bbf5d28cd272d83a6736930fb56
